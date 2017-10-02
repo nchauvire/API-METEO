@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/nchauvire/API-METEO#readme",
   "dependencies": {
-    "express": "^4.16.1"
+    "express": "^4.16.1",
+    "hbs": "^4.0.1"
   }
 }

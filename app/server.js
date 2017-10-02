@@ -4,10 +4,7 @@ var express  = require('express'),
 	path	 = require('path');
 
 //controllers
-var login    = require('./controllers/login'),
-	register = require('./controllers/register'),
-	logement = require('./controllers/logement'),
-	authenticate = require('./controllers/authenticate');
+meteo = require('./controllers/meteo');
 
 //application
 var	app = express();
@@ -20,9 +17,8 @@ app.set('views', path.join(__dirname + '/views'));
 app.set('view engine', 'hbs');
 
 //routes
-app.use('/', authenticate)
-.use('/register', register)
-.use('/logement', logement);
+app.use('/', meteo);
+
 
 
 //public files
