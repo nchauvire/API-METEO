@@ -22,7 +22,7 @@ $app->get('/previsions[/{city}]', function (Request $request, Response $response
         return $response->withJson("Vous devez spécifier une ville",403);
     }
     $client = new GuzzleHttp\Client();
-    $res = $client->request('GET', 'api.openweathermap.org/data/2.5/weather?q='.$args['city'].'&appid=e6221bb27e53441f7f7582f9be12ea9a');
+    $res = $client->request('GET', 'api.openweathermap.org/data/2.5/weather?q='.$args['city'].'&appid=e6221bb27e53441f7f7582f9be12ea9a&units=metric');
 
     return $response->write($res->getBody()->getContents(),200);
 });
