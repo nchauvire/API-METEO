@@ -13,7 +13,7 @@ $app->get('/', function (Request $request, Response $response, array $args) {
     return $response->withJson("Merci de voir la documentation de l api meteo",200);
 });
 
-$app->get('/prevision[/{city}]', function (Request $request, Response $response, array $args) {
+$app->get('/previsions[/{city}]', function (Request $request, Response $response, array $args) {
     // Sample log message
     $this->logger->info("Appel de la route prévision pour la ville ".$args['city']);
 
