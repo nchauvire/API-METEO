@@ -6,4 +6,4 @@ Pour installer l'api merci de lire le readme du [CLIENT-METEO](https://github.co
 
 ## DOCUMENTATION
 
-[documentation de l'api](http://api-meteo/doc)
+[documentation de l'api](https://app.swaggerhub.com/apis/nchauvire/API-METEO/1.0.0)
